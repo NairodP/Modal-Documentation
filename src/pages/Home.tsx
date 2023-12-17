@@ -1078,9 +1078,89 @@ export default function App() {
           You can customize the close button with the{" "}
           <span style={{ color: "#000080" }}>customCloseButton</span> props.
           This props can be assigned several values.
-          <br />
-          Below is an example for each of the 3 methods.
-        </p>
+          </p>
+          <p style={{ fontStyle: "italic" }}>
+            &#128312; The{" "}
+            <span style={{ color: "#000080" }}>btnCloseModal</span> ID is used
+            to target the custom button and customize its style.
+          </p>
+          <p style={{ fontStyle: "italic" }}>
+            &#128314; You can use the{" "}
+            <span style={{ color: "#000080" }}>customCloseButtonClass</span>{" "}
+            props to add a custom class to your close button for easy styling.
+          </p>
+          
+          <p>Below is an example for each of the 3 methods.</p>
+        
+        <pre>
+            <code>
+              <span className="comment">
+                /* In your css, you can do something like this */
+              </span>
+              <br />
+              <span className="tag">
+                <span className="keyword"></span>
+                <span className="tag">
+                  &#35;btnCloseModal &#123;
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    background-color:<span className="value"> &#35;000;</span>
+                  </span>
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    color:<span className="value"> &#35;fff;</span>
+                  </span>
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    border-radius:<span className="value"> 10px;</span>
+                  </span>
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    padding:<span className="value"> 5px 10px;</span>
+                  </span>
+                  <br />
+                  &#125;
+                </span>
+                <br />
+              </span>
+              <br />
+              <span className="comment">/* or like this */</span>
+              <br />
+              <span className="tag">
+                <span className="keyword"></span>
+                <span className="tag">
+                  .customClassAdd &#123;
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    background-color:<span className="value"> &#35;000;</span>
+                  </span>
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    color:<span className="value"> &#35;fff;</span>
+                  </span>
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    border-radius:<span className="value"> 10px;</span>
+                  </span>
+                  <br />
+                  <span className="attribute">
+                    {"  "}
+                    padding:<span className="value"> 5px 10px;</span>
+                  </span>
+                  <br />
+                  &#125;
+                </span>
+                <br />
+              </span>
+            </code>
+          </pre>
         <p>The string method :</p>
 
         <pre>
@@ -1119,51 +1199,10 @@ export default function App() {
           open={openModal12}
           onClose={() => setOpenModal12(false)}
           customCloseButton="Close"
+          customCloseButtonClass="btnCloseModal1"
         />
 
         <br />
-
-        <p style={{ fontStyle: "italic" }}>
-          &#128312; The <span style={{ color: "#000080" }}>btnCloseModal</span>{" "}
-          ID is used to target the custom button and customize its style.
-        </p>
-
-        <pre>
-          <code>
-            <span className="comment">/* Your css */</span>
-            <br />
-            <span className="tag">
-              <span className="keyword"></span>
-              <span className="tag">
-                &#35;btnCloseModal &#123;
-                <br />
-                <span className="attribute">
-                  {"  "}
-                  background-color:<span className="value"> &#35;000;</span>
-                </span>
-                <br />
-                <span className="attribute">
-                  {"  "}
-                  color:<span className="value"> &#35;fff;</span>
-                </span>
-                <br />
-                <span className="attribute">
-                  {"  "}
-                  border-radius:<span className="value"> 10px;</span>
-                </span>
-                <br />
-                <span className="attribute">
-                  {"  "}
-                  padding:<span className="value"> 5px 10px;</span>
-                </span>
-                <br />
-                &#125;
-              </span>
-              <br />
-            </span>
-          </code>
-        </pre>
-
         <br />
 
         <p>The react node element method :</p>
@@ -1194,6 +1233,12 @@ export default function App() {
                 </span>
               </span>
               <br />
+              <span className="attribute">
+                {"  "}
+                customCloseButtonClass=
+                <span className="value">&#123;"closeBtnClass"&#125;</span>
+              </span>
+              <br />
               &#47;&gt;
             </span>
           </code>
@@ -1206,6 +1251,7 @@ export default function App() {
           open={openModal13}
           onClose={() => setOpenModal13(false)}
           customCloseButton="Close"
+          customCloseButtonClass="closeBtnClass"
         />
 
         <br />
