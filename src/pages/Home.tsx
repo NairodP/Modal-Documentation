@@ -41,7 +41,7 @@ export default function App() {
             <li>Manageable with Props</li>
             <li>Close with click or ESC key</li>
             <li>
-              Built by <a href="https://github.com/nairodp">Me</a>
+              Built by <a href="https://github.com/nairodp">nairodP</a>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ export default function App() {
         <p>
           Refer to the{" "}
           <a
-            href="https://github.com/nairodp/modal/blob/master/README.md"
+            href="https://github.com/NairodP/Modal_Plugin/blob/master/README.md"
             target="_blank"
           >
             README
